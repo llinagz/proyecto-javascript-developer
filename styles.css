@@ -353,7 +353,7 @@
     .desktop-menu{
       display: none;
     }
-    .product-detail {
+    #shoppingCartContainer {
       width: 100%;
     }
     .cards-container {
@@ -365,6 +365,9 @@
     .product-card img {
       width: 140px;
       height: 140px;
+    }
+    #productDetail {
+      width: 100%;
     }
   }
 
