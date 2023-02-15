@@ -5,7 +5,7 @@ const hamburguerMenuMobile = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 const carritoCompra = document.querySelector(".navbar-shopping-cart");
-const aside = document.querySelector(".product-detail");
+const shoppingCartContainer = document.querySelector("#shoppingCartContainer");
 
 emailNavBar.addEventListener("click", toggleMenu);
 hamburguerMenuMobile.addEventListener("click", toggleMenuMobile)
@@ -21,19 +21,19 @@ function toggleMenu(){
 
     //Mejor práctica
     desktopMenu.classList.toggle("inactive");
-    aside.classList.add("inactive");
+    shoppingCartContainer.classList.add("inactive");
     mobileMenu.classList.add("inactive");
 
 }
 
 function toggleMenuMobile(){
     mobileMenu.classList.toggle("inactive");
-    aside.classList.add("inactive");
+    shoppingCartContainer.classList.add("inactive");
     desktopMenu.classList.add("inactive");
 }
 
 function toggleCarritoAside(){
-    aside.classList.toggle("inactive");
+    shoppingCartContainer.classList.toggle("inactive");
     mobileMenu.classList.add("inactive");
     desktopMenu.classList.add("inactive");
 }
